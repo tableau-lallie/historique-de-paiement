@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tableau Modifiable</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Tableau Modifiable</h1>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Nom|</th>
+        <th>Montant</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Les lignes du tableau seront ajoutées dynamiquement ici -->
+    </tbody>
+  </table>
+
+  <form id="add-form">
+    <input type="text" id="name-input" placeholder="Nom">
+    <input type="number" id="number-input" placeholder="Montant">
+    <button type="submit">Ajouter</button>
+  </form>
+  <div>
+    <button id="reset-button">Réinitialiser</button>
+</div>
+
+  <br> changement de couleur du fond:
+  <input type="range" min="0" max="360" id="rangeInput">
+
+  <script src="script.js"></script>
+</body>
+</html>
